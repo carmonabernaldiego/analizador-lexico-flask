@@ -66,12 +66,12 @@ lexer = lex.lex()
 def upload_file():
     if request.method == 'POST':
         if 'file' not in request.files:
-            return "No se ha enviado ningún archivo"
+            return render_template('error.html', file_error="No se ha enviado ningún archivo")
 
         file = request.files['file']
 
         if file.filename == '':
-            return "No se ha seleccionado ningún archivo"
+            return render_template('error.html', file_error="No se ha seleccionado ningún archivo")
 
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(file_path)
