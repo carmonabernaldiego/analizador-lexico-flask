@@ -1,8 +1,0 @@
-programa suma(){
-	int a,b,c;
-	read a;
-	read b;
-	c=a+b;
-	printf("la suma es")
-	end;
-}

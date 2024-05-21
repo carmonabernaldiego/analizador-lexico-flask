@@ -1,14 +1,11 @@
-# Declaraciones de variables
 x = 10
 y = 20
 z = 30
 
-# Método
 def add(a, b)
   a + b
 end
 
-# Condicionales
 if x > y
   puts "x es mayor que y"
 elsif x < y
@@ -17,7 +14,6 @@ else
   puts "x es igual a y"
 end
 
-# Bucles
 for i in 0...10
   puts i
 end
@@ -27,7 +23,6 @@ while x < 15
   puts x
 end
 
-# Clases
 class Persona
   def initialize(nombre, edad)
     @nombre = nombre
